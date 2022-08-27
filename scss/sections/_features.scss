@@ -1,0 +1,254 @@
+@use '../custom' as *;
+
+.features {
+
+    .features-content {
+        text-align: center;
+        margin-top: 4rem;
+        width: 40%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    .features-box {
+        width: 65%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        .box {
+            text-align: center;
+            
+            h4 {
+                margin-top: 2rem;
+            }
+
+            p {
+                margin-top: 2rem;
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+
+            img {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .features-video {
+        display:table;
+        position:relative;
+        width:80%;
+        height: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5rem;
+
+        .video {
+            width: 100%;
+            border: none;
+            border-radius: 25px;
+        }
+
+        .playpause {
+            background-image:url("../../img/play.png");
+            background-repeat:no-repeat;
+            width:8rem;
+            height:8rem;
+            position:absolute;
+            left:0%;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            margin:auto;
+            background-size:contain;
+            background-position: center;
+        }
+    }
+
+    .features-card {
+        width: 80%;
+        padding: 1rem;
+        margin-top: 10rem;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
+        h1 {
+            font-weight: 400;
+        }
+        p {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+        input {
+            border-radius: 10rem;
+            border: none;
+            padding: 0.6rem;
+            padding-left: 2rem;
+            background: $input;
+        }
+        button {
+            width: 10rem;
+            background-color: $primary;
+            color: $lightText;
+            border-radius: 10rem;
+            border: none;
+            padding: 0.6rem;
+            text-transform: capitalize;
+            margin-top: 2rem;
+        }
+    }
+
+    .features-card-2 {
+        width: 85%;
+        padding: 1rem;
+        margin-top: 10rem;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        .words {
+            padding-left: 2rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
+        h1 {
+            font-weight: 400;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+
+            span {
+                font-weight: 500;
+                font-size: 0.8rem;
+                color: $secondText;
+            }
+        }
+        input {
+            border-radius: 10rem;
+            border: none;
+            padding: 0.6rem;
+            padding-left: 2rem;
+            background: $input;
+        }
+        button {
+            width: 10rem;
+            background-color: $primary;
+            color: $lightText;
+            border-radius: 10rem;
+            border: none;
+            padding: 0.6rem;
+            text-transform: capitalize;
+            margin-top: 1rem;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        .features-content {
+            width: 90%;
+
+            h1 {
+                font-size: 5rem;
+            }
+            p {
+                font-size: 3rem;
+                margin-top: 3rem;
+            }
+        }
+        .features-box {
+            width: 70%;
+
+            .box {
+
+                h4 {
+                    font-size: 3rem;
+                }
+    
+                p {
+                    font-size: 2rem;
+                }
+    
+                img {
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+        }
+
+        .features-video {
+            width: 100%;
+        }
+
+        .features-card {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: 5rem;
+            }
+            p {
+                font-size: 3rem;
+                margin-top: 3rem;
+            }
+            button {
+                width: 60%;
+                font-size: 2rem;
+                padding: 1.5rem;
+            }
+            img {
+                margin-top: 4rem;
+            }
+        }
+
+        .features-card-2 {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                display: none;
+            }
+            p {
+                font-size: 2.5rem;
+                margin-top: 4rem;
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+            input {
+                width: 100%;
+                font-size: 2rem;
+                margin-top: 2rem;
+                padding: 1.5rem;
+                padding-left: 4rem;
+            }
+            button {
+                width: 100%;
+                font-size: 2rem;
+                padding: 1.5rem;
+            }
+        }
+    }
+}

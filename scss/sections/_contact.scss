@@ -1,0 +1,202 @@
+@use '../custom' as *;
+
+.contacts {
+    margin-bottom: 5rem;
+
+    .contacts-content {
+        text-align: center;
+        margin-top: 8rem;
+        width: 40%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            font-weight: 500;
+        }
+        img {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+    .contacts-info {
+        width: 95%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        .contacts-card {
+            width: 80%;
+            margin: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-top: 2rem;
+            }
+            input {
+                width: 80%;
+                border-radius: 10rem;
+                border: none;
+                padding: 0.6rem;
+                padding-left: 2rem;
+                background: $input;
+                margin-top: 2rem;
+            }
+            textarea {
+                width: 80%;
+                min-height: 12rem;
+                border: none;
+                padding: 0.6rem;
+                padding-left: 2rem;
+                background: $input;
+                margin-top: 2rem;
+                resize: none;
+            }
+            .card-btn {
+                text-align: start;
+                width: 80%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+                button {
+                    width: 7rem;
+                    background-color: $primary;
+                    color: $lightText;
+                    border-radius: 10rem;
+                    border: none;
+                    padding: 0.6rem;
+                    text-transform: capitalize;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            ::placeholder { 
+                color: $secondText;
+                opacity: 1;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+        }
+
+        .contacts-info-content {
+            width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contacts-map {
+            overflow: hidden;
+            margin-top: 2rem;
+
+            iframe {
+                width: 30rem;
+                height: 25rem;
+                border:0; 
+                position: relative; 
+                top:-100px;
+
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        .contacts-icons {
+            margin-top: -4rem;
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        .contacts-content {
+            width: 90%;
+
+            h1 {
+                font-size: 5rem;
+            }
+            img {
+                width: 40%;
+            }
+            p {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 3rem;
+            }
+        }
+        .contacts-info {
+            width: 100%;
+            
+            .contacts-card {
+                width: 100%;
+                margin: 0;
+                margin-top: 6rem;
+                margin-bottom: 6rem;
+
+                h1 {
+                    font-size: 2.5rem;
+                    padding-top: 4rem;
+                }
+                input {
+                    margin-top: 4rem;
+                    min-height: 6rem;
+                }
+                textarea {
+                    width: 80%;
+                    min-height: 20rem;
+                    margin-top: 4rem;
+                }
+                .card-btn {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+    
+                    button {
+                        width: 40%;
+                        font-size: 2rem;
+                        padding: 1.5rem;
+                    }
+                }
+                ::placeholder { 
+                    font-size: 2rem;
+                }
+    
+            }
+
+            .contacts-info-content {
+                text-align: start;
+
+                .contacts-cell {
+                    margin-top: 2rem;
+
+                    img {
+                        width: 2.5rem;
+                        object-position: center;
+                    }
+                    p {
+                        font-size: 2rem;
+                        margin-top: -0.1rem;
+                        margin-left: -2rem;
+                    }
+                }
+            }
+
+            .contacts-icons {
+                width: 60%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+    
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+}

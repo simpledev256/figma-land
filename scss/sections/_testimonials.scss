@@ -1,0 +1,93 @@
+@use '../custom' as *;
+
+.testimonials {
+
+    .testimonials-content {
+        text-align: center;
+        margin-top: 4rem;
+        width: 65%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            font-weight: 500;
+        }
+        img {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    .testi-dude {
+        width: 20%;
+        margin-top: 3rem;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        width: 15rem;
+        background-color: $primary;
+        color: $lightText;
+        border-radius: 10rem;
+        border: none;
+        padding: 0.6rem;
+        text-transform: capitalize;
+        margin-top: 2rem;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        .testimonials-content {
+            width: 90%;
+
+            h1 {
+                font-size: 5rem;
+            }
+            img {
+                width: 40%;
+            }
+            p {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 3rem;
+            }
+        }
+        .testi-dude {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        button {
+            width: 50%;
+            font-size: 2rem;
+            padding: 1.5rem;
+            margin-top: 10rem;
+        }
+    }
+}

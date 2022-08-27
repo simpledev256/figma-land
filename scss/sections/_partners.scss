@@ -1,0 +1,77 @@
+@use '../custom' as *;
+
+.partners {
+
+    .partners-content {
+        text-align: center;
+        margin-top: 4rem;
+        width: 35%;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    .partners-brands {
+        text-align: center;
+        width: 65%;
+        margin-top: 3rem;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        width: 10rem;
+        background-color: $primary;
+        color: $lightText;
+        border-radius: 10rem;
+        border: none;
+        padding: 0.6rem;
+        text-transform: capitalize;
+        margin-top: 2rem;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        .partners-content {
+            width: 90%;
+
+            h1 {
+                font-size: 5rem;
+            }
+            p {
+                font-size: 3rem;
+                margin-top: 3rem;
+            }
+        }
+
+        .partners-brands {
+
+            p {
+                font-size: 2rem;
+                margin-top: 4rem;
+            }
+            img {
+                width: 60%;
+            }
+        }
+
+        button {
+            width: 50%;
+            font-size: 2rem;
+            padding: 1.5rem;
+            margin-top: 10rem;
+        }
+    }
+}
+
